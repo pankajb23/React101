@@ -1,0 +1,15 @@
+.square{
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.board-row{
+    display: flex;
+}

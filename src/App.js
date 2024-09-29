@@ -85,5 +85,6 @@ export default function Game(){
   function nextPlayer(){
     return 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
+  console.log('By here')
   return (<Board onClickMethod={onClickMethod} playerFinder={playerFinder} nextPlayer={nextPlayer}/>);
 }

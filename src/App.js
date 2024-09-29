@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import React , {useState} from 'react';
 import './css/game.css'
 
 function Square({value, onClick, player}){
@@ -85,6 +85,6 @@ export default function Game(){
   function nextPlayer(){
     return 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
-  console.log('By here')
+  console.log('By here '+ onClickMethod +""+ playerFinder +""+ nextPlayer);
   return (<Board onClickMethod={onClickMethod} playerFinder={playerFinder} nextPlayer={nextPlayer}/>);
 }

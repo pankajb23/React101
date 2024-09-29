@@ -4,17 +4,13 @@ import { useState } from 'react';
 import './css/game.css'
 
 function Square({value, onClick, player}){
-  console.log(" player " + player);
-  console.log(" onClick "+onClick);
   return (
     <button className="square" onClick={() => onClick(value)}> {player(value)}
-      {/* TODO */}
     </button>
   );
 }
 
 function Board({onClickMethod, playerFinder, nextPlayer}) {
-  console.log(" playerFinder " + playerFinder + " onClickMethod " + onClickMethod);
   return (
     <div>
       <div className="status">{nextPlayer()}</div>
@@ -89,6 +85,5 @@ export default function Game(){
   function nextPlayer(){
     return 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
-  console.log(" player " + playerFinder);
   return (<Board onClickMethod={onClickMethod} playerFinder={playerFinder} nextPlayer={nextPlayer}/>);
 }
